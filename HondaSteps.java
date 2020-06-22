@@ -117,7 +117,7 @@ public class HondaSteps {
 			List<WebElement> engineHeader = hooks.getDriver().findElementsByXPath("(//ul[@class='tab_content'])[2]/li/span[1]");
 			List<WebElement> engineValue = hooks.getDriver().findElementsByXPath("(//ul[@class='tab_content'])[2]/li/span[2]");
 			
-			for(int i=1; i <engineValue.size(); i++) {
+			for(int i=0; i <engineValue.size(); i++) {
 				dioEngineMap.put(engineHeader.get(i+1).getText(), engineValue.get(i).getText());
 			}
 			for (Entry<String, String> eachString : dioEngineMap.entrySet()) {
@@ -170,7 +170,7 @@ public class HondaSteps {
 					List<WebElement> engineHeader = hooks.getDriver().findElementsByXPath("(//ul[@class='tab_content'])[2]/li/span[1]");
 					List<WebElement> engineValue = hooks.getDriver().findElementsByXPath("(//ul[@class='tab_content'])[2]/li/span[2]");
 					
-					for(int i=1; i <engineValue.size(); i++) {
+					for(int i=0; i <engineValue.size(); i++) {
 						activa125Map.put(engineHeader.get(i+1).getText(), engineValue.get(i).getText());
 					}
 					for (Entry<String, String> eachString : activa125Map.entrySet()) {
